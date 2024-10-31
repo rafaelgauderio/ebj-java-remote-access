@@ -6,7 +6,19 @@
         <title>Facelet Title</title>
     </h:head>
     <h:body>
-        Hello from Facelets
+        ejb with remote interface
+        <h:form>
+            Value first number:
+            <h:inputText value="#{jsfCalculator.valueA}" ></h:inputText>
+            <br/>
+            Value second number:
+            <h:inputText value="#{jsfCalculator.valueB}" ></h:inputText>
+            <br/>
+            <h:commandButton value="Summation" action="#{jsfCalculator.sum()}"/>
+            <br/>
+            <h:outputText value="#{jsfCalculator.result}"/>
+        </h:form>
     </h:body>
+    
 </html>
 

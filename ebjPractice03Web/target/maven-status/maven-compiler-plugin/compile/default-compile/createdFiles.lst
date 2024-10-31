@@ -1,3 +1,4 @@
-br\ejb\EbjCalculator.class
 br\resources\JavaEE8Resource.class
+br\ejb\EbjCalculator.class
+br\jsf\jsfCalculator.class
 br\JAXRSConfiguration.class
