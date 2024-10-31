@@ -3,15 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package bri;
+package br.ejb;
 
-import javax.ejb.Remote;
+import javax.ejb.Stateless;
 
 /**
  *
  * @author rafael de luca
  */
-@Remote
-public interface ICalculator {
-    public int sum(int a, int b);
+@Stateless
+public class EbjCalculator implements bri.ICalculator {
+
+    @Override
+    public int sum(int a , int b) {
+        return a + b;
+    }
+   
 }
